@@ -1,0 +1,83 @@
+.mainBody {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mainBody::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://cdn.appointy.com/web/blob-web/images/professions/backgrounds/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: blur(
+    5px
+  ); Adjust the blur amount (5px in this example) to your liking */
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.dashbord_header {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 10%;
+}
+.dashboard_highlights {
+  display: flex;
+  width: 80%;
+  margin: auto;
+
+  margin-top: 30px;
+  justify-content: space-around;
+}
+.dashboard_highlights > div {
+  cursor: pointer;
+  padding: 15px;
+  width: 20%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgba(51, 51, 51, 0.484) 0px 0px 0px 3px;
+
+  border-radius: 10px;
+}
+.dashboard_highlights > div > :first-child {
+  color: #0a80a8;
+  font-weight: 600;
+  font-size: 25px;
+}
+.dashboard_highlights > div > :last-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+.dashboard_highlights > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+@media screen and (max-width: 480px) {
+  .dashboard_highlights {
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    margin: auto;
+
+    margin-top: 30px;
+    /* justify-content: space-around; */
+  }
+  .dashboard_highlights > div {
+    /* padding: 15px; */
+
+    width: 80%;
+    margin: auto;
+    margin: 15px auto;
+  }
+  .dashbord_header > div {
+    width: fit-content;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 5%;
+    border-bottom: 2px solid grey;
+  }
+}

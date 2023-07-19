@@ -1,10 +1,19 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import "./App.css";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Business from "./Pages/Business";
 function App() {
   return (
-    <div className="App">
-      <h1>hello </h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/bussiness" element={<Business />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

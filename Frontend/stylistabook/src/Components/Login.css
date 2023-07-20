@@ -1,0 +1,131 @@
+
+.login{
+    height:auto;
+    width: 440px;
+    background-color: rgb(224, 243, 253);
+    padding-bottom:20px; 
+    margin-left:auto; 
+    margin-right:auto;  
+    padding-left:10px; 
+    margin-top:100px;
+    padding-top:20px;
+}
+
+.btns{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(18, 17, 17);
+    border-width: 2px;
+    border-style: solid;
+    justify-content: center;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: 80px;
+    color: rgb(18, 17, 17);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.loginform{
+    display: flex;
+  margin: 0;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: -1px;
+}
+
+.loginform input{
+    margin: auto;
+    width: 300px;
+    padding: 10px 5px;
+    margin-top: 10px;
+   background-color: #fff;
+   border: 1px solid transparent;
+   font-size: 16px;
+   
+}
+  .loginform input:focus {
+    outline: none;
+    border: 1px solid blue;
+  }
+
+  #submitformbtn {
+    margin: auto;
+    width: 311px;
+    border: 0;
+    outline: 0;
+    margin-top: 25px;
+    color: white;
+    background-color:#121111;
+    border-radius: 4px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 11px 0;
+  }
+
+  #submitformbtn:hover {
+    background-color: #2f2d2d;
+    cursor: pointer;
+  }
+
+.parttwo{
+    
+   width: 50%;
+}
+
+#frgtpswd {
+    width: 126px;
+    margin: 14px 0px 0px 157px;
+}
+#frgtpswd p{
+    border: solid #121111;
+       width: 150px;
+    border-radius: 0;
+    border-width: 0 0 2px;
+    color: #121111;
+    height: 25px;
+    padding: 0;
+    text-decoration: none;
+    width: auto;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+#or{
+    color: #121111;
+    font-weight: 600;
+    margin: 0px 0px 0px 210px;
+}
+
+.googleauth {
+    display:flex;
+       height: 40px;
+    text-transform: capitalize;
+    padding: 11px 20px;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #121111;
+    justify-content: space-around;
+    cursor: pointer;
+    border-radius: 4px;
+    margin:10px 0px 10px 110px;
+}
+
+.googleauth img{
+    width: 15%;
+    margin-right: 5px;
+    padding-bottom: 3px;
+}

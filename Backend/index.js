@@ -1,5 +1,8 @@
 const express = require("express");
-
+const cors = require("cors")
+require("dotenv").config()
+const port = process.env.PORT
+const cookiParser = require("cookie-parser");
 const connectDB = require("./db");
 const app = express();
 const bodyParser = require('body-parser');
@@ -15,6 +18,8 @@ app.use(cookiParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use("/user", userrouter)
+
+//server setup here.....//
 
 app.listen(process.env.PORT, () => {
   connectDB();

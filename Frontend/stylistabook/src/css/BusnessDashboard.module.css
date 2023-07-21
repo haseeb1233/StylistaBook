@@ -1,6 +1,6 @@
 .mainBody {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
 }
 
@@ -35,17 +35,20 @@
   justify-content: space-around;
 }
 .dashboard_highlights > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   padding: 15px;
   width: 20%;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
     rgba(51, 51, 51, 0.484) 0px 0px 0px 3px;
-
   border-radius: 10px;
 }
 .dashboard_highlights > div > :first-child {
-  color: #0a80a8;
+  color: #0aa834;
   font-weight: 600;
   font-size: 25px;
 }
@@ -56,6 +59,14 @@
 .dashboard_highlights > div:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
+.dashboard_highlights > :last-child {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(81, 243, 6) 0px 0px 0px 3px;
+}
+.dashboard_highlights > :last-child:hover {
+  box-shadow: rgba(185, 15, 15, 0.16) 0px 1px 4px,
+    rgb(227, 243, 6) 0px 0px 0px 3px;
+}
+
 @media screen and (max-width: 480px) {
   .dashboard_highlights {
     display: flex;

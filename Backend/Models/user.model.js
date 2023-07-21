@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  isEmailVerified: {
+  isVerified: {
     type: Boolean,
     default: false,
   },
@@ -29,12 +29,11 @@ const userSchema = new mongoose.Schema({
     enum: ["customer", "stylist"],
     default: "customer",
   },
-  //   createdAt: {
-  //     type: Date,
-  //     default: Date.now,
-  //   },
 });
 
 const UserModel = mongoose.model("user", userSchema);
 
 module.exports = UserModel;
+
+
+

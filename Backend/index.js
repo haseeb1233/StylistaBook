@@ -1,12 +1,14 @@
 const express = require("express");
 const cors = require("cors")
 require("dotenv").config()
+const passport = require('passport');
+require('./google-outh'); 
 const port = process.env.PORT
 const cookiParser = require("cookie-parser");
 const connectDB = require("./db");
 const app = express();
 const bodyParser = require('body-parser');
-
+app.use(passport.initialize());
 app.use(express.json())
 app.use(cors())
 

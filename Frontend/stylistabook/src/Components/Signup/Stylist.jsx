@@ -3,12 +3,12 @@ import "./Stylist.css"
 
 function Stylist() {
   return (
-    <div>
-      <div>
+    <div className='stylistsignup'>
+      <div className='btnsdiv'>
         <button style={{backgroundColor:"black",color:"white"}} className='btns'>Sign Up</button>
         <button  className='btns'>Login</button>
       </div>
-      <form className='clientform' action="">
+      <form className='stylistform' action="">
         <input type="text" placeholder='First name' />
         <input type="text" placeholder='Last name' />
         <input type="email" placeholder='Enter Email' />

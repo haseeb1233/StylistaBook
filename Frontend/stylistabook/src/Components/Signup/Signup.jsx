@@ -3,7 +3,7 @@ import "./Signup.css"
 function Signup() {
   return (
     <div className='signup'>
-       <div>
+       <div className='btnsdiv'>
         <button style={{backgroundColor:"black",color:"white"}} className='btns'>Sign Up</button>
         <button  className='btns'>Login</button>
       </div>
@@ -15,7 +15,7 @@ function Signup() {
         <button className='signupselect'>
         <p>SIGNUP AS A CLIENT </p>
       </button>
-        <p>or</p>
+        <p id='or'>or</p>
         <button className='signupselect'>
         <p>SET UP MY BUSINESS </p>
       </button>

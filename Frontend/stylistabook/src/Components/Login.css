@@ -11,6 +11,10 @@
     padding-top:20px;
 }
 
+.btnsdiv{
+  margin-left: 130px;
+}
+
 .btns{
     background-color: rgb(255, 255, 255);
     border-color: rgb(18, 17, 17);
@@ -111,7 +115,7 @@
     display:flex;
        height: 40px;
     text-transform: capitalize;
-    padding: 11px 20px;
+    padding: 20px 20px;
     color: #fff;
     font-size: 14px;
     width: 100%;
@@ -124,6 +128,9 @@
     margin:10px 0px 10px 110px;
 }
 
+.googleauth p{
+  margin-top: 15px;
+}
 .googleauth img{
     width: 15%;
     margin-right: 5px;

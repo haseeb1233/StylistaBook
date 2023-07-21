@@ -1,0 +1,78 @@
+.today_appointments {
+  background-color: rgba(240, 248, 255, 0.361);
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgba(51, 51, 51, 0.484) 0px 0px 0px 3px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.TD_header h3 {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.noApp {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #b53bc070;
+  padding: 50px;
+  text-align: center;
+  font-weight: 500;
+  color: #1a237e;
+  font-size: 20px;
+}
+p {
+  letter-spacing: 0.7px;
+  margin-bottom: 0px;
+}
+.TDA_headings {
+  font-weight: 600;
+  color: #1a237e;
+  padding: 5px;
+}
+.TDA_content {
+  padding: 50px;
+  overflow-x: scroll;
+}
+.TDA_content::-webkit-scrollbar {
+  display: none;
+}
+.TDA_headings,
+.TDA_card {
+  padding: 15px;
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+}
+.TDA_card {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-bottom: 2px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.TDA_card > div,
+.TDA_headings > div {
+  min-width: 120px;
+}
+.TDA_card > div.changeStatus {
+  background-color: #0d47a1;
+  text-align: center;
+  max-width: 50px;
+  border-radius: 5px;
+  padding: 4px 0;
+  color: wheat;
+}
+@media screen and (max-width: 480px) {
+  .TDA_card {
+    width: fit-content;
+  }
+  .today_appointments {
+    width: 95%;
+  }
+}

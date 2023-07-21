@@ -1,0 +1,82 @@
+.filterBYdate > div {
+  align-items: center;
+  display: flex;
+}
+
+.AP_Filters_search {
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+
+  justify-content: space-between;
+}
+.filterBYdate {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(162, 156, 156);
+}
+.filterBYdate > :first-child {
+  font-weight: 600;
+  color: #1a237e;
+  margin: 10px 0;
+}
+.datesinput > :first-child {
+  margin: 0 5px;
+}
+.datesinput input {
+  margin: 5px;
+}
+.serchInp {
+  width: 37%;
+  border: 2px solid rgb(162, 156, 156);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 150px; */
+  border-radius: 10px;
+}
+.serchInp form > input {
+  margin: 3px;
+  width: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid rgb(162, 156, 156);
+}
+.serchInp form > input::placeholder {
+  padding-left: 10px;
+}
+@media screen and (max-width: 480px) {
+  .AP_Filters_search {
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    /* justify-content: space-between; */
+  }
+  .filterBYdate > div {
+    align-items: center;
+    display: flex;
+  }
+  .serchInp {
+    width: 100%;
+    border: 2px solid rgb(162, 156, 156);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 150px; */
+    border-radius: 10px;
+    /* height: 50px; */
+    padding: 5px;
+    margin: 0;
+  }
+  .serchInp > form {
+    display: flex;
+    height: 50px;
+    padding: 0;
+  }
+  .serchInp form > :first-child {
+    /* border: 2px solid red; */
+    width: 250px;
+  }
+}

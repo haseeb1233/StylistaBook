@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../css/BusnessNavbar.module.css";
-
+import logoImg1 from "../images/stylista.png";
 const BusinessNavbar = () => {
   return (
     <nav
@@ -12,13 +12,8 @@ const BusinessNavbar = () => {
         style={{ margin: "0px", padding: "0px" }}
         className="container-fluid"
       >
-        <Link className="navbar-brand" to="/">
-          {" "}
-          <img
-            style={{ width: "200px" }}
-            src="./images/stylista.png"
-            alt="StylistaBook"
-          />
+        <Link className="navbar-brand" to="/business">
+          <img className={styles.logoImg} src={logoImg1} alt="StylistaBook" />
         </Link>
 
         <button
@@ -46,12 +41,17 @@ const BusinessNavbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/custmores">
-                Custmores
+                Requests
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/services">
                 Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/services">
+                Custmores
               </Link>
             </li>
           </ul>

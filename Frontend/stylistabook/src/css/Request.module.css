@@ -1,0 +1,58 @@
+.TDA_headings,
+.req_card {
+  padding: 15px;
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+}
+.req_card {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-bottom: 2px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.req_card > div,
+.TDA_headings > div {
+  min-width: 120px;
+}
+.req_card > div.changeStatus {
+  background-color: #0d47a1;
+  text-align: center;
+  max-width: 50px;
+  border-radius: 5px;
+  padding: 4px 0;
+  color: wheat;
+}
+.TDA_headings {
+  font-weight: 600;
+  color: #1a237e;
+  padding: 5px;
+}
+.TD_header h3 {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.req_card button {
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 3px 9px;
+  color: #91221E!;
+  font-weight: 600;
+}
+.acc_btn {
+  background-color: #00b712;
+  background: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+}
+.rej_btn {
+  color: white;
+  background-color: #990000;
+  background: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+}
+
+@media screen and (max-width: 480px) {
+  .req_card {
+    width: fit-content;
+  }
+}

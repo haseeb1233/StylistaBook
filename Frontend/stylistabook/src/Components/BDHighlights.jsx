@@ -21,6 +21,10 @@ function BDHighlights() {
           <p>3</p>
           <p>CUSTMORES</p>
         </div>
+        <div>
+          <p>4</p>
+          <p>REQUESTS</p>
+        </div>
       </div>
     </>
   );

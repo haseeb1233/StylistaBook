@@ -1,0 +1,110 @@
+
+.saloonposters {
+    width: 80%;
+    display: flex;
+    background-color: #fff;
+    margin-top: 150px;
+    margin-left: 200px;
+   
+  }
+  .saloondiv {
+    flex: 0 0 35%;
+    position: relative;
+    margin-right: 15px; 
+    border-radius: 5%;
+  }
+   
+ 
+.reviewdiv {
+  background: rgba(0, 0, 0, 0.5);
+  width: 70px;
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+
+.rating {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.noofreviews {
+  color: #fff;
+  font-size: 10px;
+  margin: 0;
+}
+  
+  .saloondiv img {
+    width: 100%;
+    border-radius: 5%;
+  }
+
+.titlebook{
+    width: 100%;
+}
+.titlebook h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#titlebookp{
+    color: #767676;
+}
+
+  .bookmain{
+    display: flex;
+    border-top: 1px solid #c9c2c2;
+    height: 100px;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 12px;
+  }
+  .bookmainbottom{
+    border-bottom: 1px solid #c9c2c2;
+  }
+  .booksub{
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .booksub p{
+    margin-top: 8px;
+    font-weight: bold;
+  }
+
+  .servicetitle{
+    color: #383734;
+    line-height: 20px;
+    margin-bottom: 5px;
+    word-break: break-word;
+     margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .bookbtn{
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    background: #00a3ad;
+    border: 1px solid #00a3ad;
+    color: #fff;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 700;
+    outline: 0;
+    text-align: center;
+    transition: opacity .2s ease-out;
+    border-radius: 7px;
+  }

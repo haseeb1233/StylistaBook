@@ -3,7 +3,7 @@ import "./Changepswd.css"
 function Changepswd() {
   return (
     <div className='Changepswd'>
-      <div>
+      <div className='btnsdiv'>
         <button className='btns'>Sign Up</button>
         <button style={{backgroundColor:"black",color:"white"}} className='btns'>Login</button>
       </div>

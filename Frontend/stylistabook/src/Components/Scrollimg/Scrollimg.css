@@ -1,0 +1,111 @@
+
+.container {
+    width: 100%; 
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+
+  
+  
+  .rowposters {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    background-color: #fff;
+  }
+  .rowposters::-webkit-scrollbar{
+    display: none;
+}
+  
+  .postersdiv {
+    flex: 0 0 25%;
+    position: relative;
+    margin-right: 15px; 
+    border-radius: 5%;
+  }
+   
+ 
+.reviewdiv {
+  background: rgba(0, 0, 0, 0.5);
+  width: 70px;
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+
+.rating {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.noofreviews {
+  color: #fff;
+  font-size: 10px;
+  margin: 0;
+}
+  
+  .postersdiv img {
+    width: 100%;
+    border-radius: 5%;
+  }
+
+  .titleshop{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .addressshop{
+    font-size: 12px;
+    color: #767676;
+  }
+
+
+  .button-wrapper {
+    flex: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left {
+    justify-content: flex-start;
+    position: absolute;
+    top: 70px;
+    left: 80px;
+  }
+  
+  .right {
+    justify-content: flex-end;
+    position: absolute;
+    top: 70px;
+    right: 80px;
+  }
+  
+  .round-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 0.5px solid #ebebeb;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    outline: none;
+    z-index: 1;
+  }
+
+  .button-wrapper img{
+    width: 60%;
+  }
+  

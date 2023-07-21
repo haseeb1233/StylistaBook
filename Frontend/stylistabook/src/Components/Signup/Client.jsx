@@ -4,7 +4,7 @@ import "./Client.css"
 function Client() {
   return (
     <div className='clientsignup'>
-       <div>
+       <div className='btnsdiv'>
         <button style={{backgroundColor:"black",color:"white"}} className='btns'>Sign Up</button>
         <button  className='btns'>Login</button>
       </div>

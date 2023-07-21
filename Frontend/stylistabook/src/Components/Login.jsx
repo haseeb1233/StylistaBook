@@ -4,7 +4,7 @@ import "./Login.css"
 function Login() {
   return (
     <div className='login'>
-      <div>
+      <div className='btnsdiv'>
         <button className='btns'>Sign Up</button>
         <button style={{backgroundColor:"black",color:"white"}} className='btns'>Login</button>
       </div>
@@ -20,7 +20,6 @@ function Login() {
       <p id='or'>or</p>
       <button className='googleauth'>
         <img src="https://ragsdalemartin.com/wp-content/uploads/2020/07/white-google-logo.png" alt="googlelogo" />
-        
         <p>Continue With Google </p>
       </button>
       </div>

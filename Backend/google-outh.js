@@ -20,6 +20,13 @@ passport.use(new GoogleStrategy({
     email,
     password: uuidv4()
   })
+
+  try {
+    await user.save();
+    return cb(null, user);
+  } catch (error) {
+    return cb(error);
+  }
   
   
     // await user.save()
@@ -30,8 +37,7 @@ passport.use(new GoogleStrategy({
     //     password,
     //     url: profile._json.picture
     // }
-      return cb(null,user);
-   
+
   }
 ));
 

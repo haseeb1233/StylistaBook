@@ -35,13 +35,17 @@ function Details() {
             </div>
         </div>
       </div>
-      <div>
-        <div>
-        <p>About us</p>
+      <div className='bookingdetails'>
+        <div className='aboutusdiv'>
+        <h2>About us</h2>
         <p>Love Your hair,Love yourself</p>
         </div>
-        <div>
-            <p>CONTACT & BUSINESS HOURS </p>
+        <div className='businesshours'>
+            <p className='businesstitle'>CONTACT & BUSINESS HOURS </p>
+            <div className='call'>
+                <p>(619) 693-8433</p>
+                <button>Call</button>
+            </div >
             <div className='date'>
                 <p>Sunday</p>
                 <p>11.00AM-7.00PM</p>

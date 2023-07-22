@@ -1,0 +1,28 @@
+.categories{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border: 1px solid red;
+    width: 80%;
+    gap: 100px;
+    background-color: #fcfdff;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e2e8f0;
+    margin: auto;
+}
+.catdiv img{
+    width: 76px;
+    height: 75px;
+    margin-left: 50px;
+}
+.catdiv a{
+    text-decoration: none;
+}
+.catdiv h3{
+    text-align: center;
+    text-decoration: none;
+    color: #414A4D;
+    font-size: 20px;
+    padding-top: 20px;
+}

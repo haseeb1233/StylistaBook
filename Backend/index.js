@@ -1,29 +1,42 @@
-const express = require("express");
-const cors = require("cors")
-require("dotenv").config()
-const passport = require('passport');
-require('./google-outh'); 
-const port = process.env.PORT
-const cookiParser = require("cookie-parser");
-const connectDB = require("./db");
+const express = require('express');
+const cors = require('cors');
+
+require('dotenv').config();
+
+const { connection } = require('./Configs/db');
+const { styleRouter } = require('./Routes/style.routes');
+const { stylistRouter } = require('./Routes/stylist.routes');
+const userRoutes = require("./Routes/user.routes");
+const { appointmentRouter } = require('./Routes/appointment.routes');
+const { adminRouter } = require('./Routes/admin.routes');
+
+
 const app = express();
-const bodyParser = require('body-parser');
-app.use(passport.initialize());
-app.use(express.json())
-app.use(cors())
+app.use(express.json());
+app.use(cors());
+app.use("/user", userRoutes)
+app.use('/style', styleRouter)
+app.use('/stylist', stylistRouter)
+app.use('/appointment', appointmentRouter)
+app.use('/admin', adminRouter)
 
-const userrouter = require("./Routes/user.router")
 
-const auth = require("./Middleware/auth")
+const Port = process.env.Port || 8000;
 
-app.use(cookiParser());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use("/user", userrouter)
+app.listen(Port, async (req,res)=>{
 
-//server setup here.....//
+    try {
 
-app.listen(process.env.PORT, () => {
-  connectDB();
-  console.log("server is running at 8000");
-});
+        await connection;
+
+        console.log(`DB connected. `);
+
+    } catch (error) {
+
+        console.log(error);
+
+    }
+
+    console.log(`server is running on port ${Port}`);
+    
+})

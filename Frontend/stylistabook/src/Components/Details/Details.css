@@ -111,6 +111,64 @@
     border-radius: 7px;
   }
 
+    .bookingdetails{
+     height: 700px;
+      width: 30%;
+      position: sticky;
+      top: 0px;
+      margin-left: 40px;
+      background-color: #fafafa;
+      border-radius: 6px;
+      padding: 30px 22px 1px;
+      color: #161718;
+    font-size: 100%;
+    line-height: normal;
+    }
+    .aboutusdiv h2{
+        color: #383734;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+    letter-spacing: .08px;
+    line-height: 16px;
+    }
+    .businesshours{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .businesstitle{
+        color: #383734;
+        padding-top: 30px;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+    letter-spacing: .08px;
+    line-height: 16px;
+    height: 70px;
+    border-top: 1px solid #c9c2c2 ;
+    border-bottom: 1px solid #c9c2c2;
+    }
+   .call{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid #c9c2c2;
+    height: 70px;
+   }
+   .call button{
+    width: 70px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 40px;
+    font-weight: 500;
+   }
   .date{
     display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
   }

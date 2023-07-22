@@ -1,0 +1,16 @@
+.profile_header {
+  padding: 50px;
+}
+.profile_header h2 {
+  padding: 10px;
+  color: #a8772d;
+  margin-bottom: 20px;
+  width: fit-content;
+  background-color: rgba(203, 239, 212, 0.614);
+  border-radius: 10px;
+  border-bottom: 4px solid grey;
+}
+.profile_header img {
+  border-radius: 10px;
+  width: 50%;
+}

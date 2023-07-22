@@ -26,8 +26,7 @@ const Port = process.env.Port || 8000;
 app.listen(Port, async (req,res)=>{
 
     try {
-
-        await connection;
+            await connection;
 
         console.log(`DB connected. `);
 

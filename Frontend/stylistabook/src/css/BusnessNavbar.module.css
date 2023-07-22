@@ -1,8 +1,10 @@
-.navbarcss {
-  position: sticky;
-  top: 0;
-  left: 0;
+nav.navbarcss {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 100;
   background: white;
+}
+
+.logoImg {
+  height: 70px;
+  margin-left: 10px;
 }

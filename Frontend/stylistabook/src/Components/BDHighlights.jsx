@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../css/BusnessDashboard.module.css";
 
-function BDHighlights() {
+function BDHighlights({ data }) {
   return (
     <>
       <div className={styles.dashbord_header}>
@@ -10,19 +10,19 @@ function BDHighlights() {
 
       <div className={styles.dashboard_highlights}>
         <div>
-          <p>2</p>
+          <p>{data.appointments}</p>
           <p>APPOINTMENT</p>
         </div>
         <div>
-          <p>RS .600.00</p>
+          <p>RS {data.totalEarned}.00</p>
           <p>ESTIMATED SALES</p>
         </div>
         <div>
-          <p>3</p>
+          <p>{data.totalCustomers}</p>
           <p>CUSTMORES</p>
         </div>
         <div>
-          <p>4</p>
+          <p>{data.pendingCount}</p>
           <p>REQUESTS</p>
         </div>
       </div>

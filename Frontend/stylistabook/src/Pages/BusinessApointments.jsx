@@ -1,39 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BusinessNavbar from "../Components/BusinessNavbar";
 import styles from "../css/TodayAp.module.css";
 import styles1 from "../css/BS_app.module.css";
 import AppointentsList from "../Components/AppointentsList";
+import Islogin from "../helper/Islogin";
 function BusinessApointments() {
-  const cardData = [
-    {
-      time: "08:00 PM",
-      name: "Harry",
-      service: "Hair Cut",
-      price: "400",
-      status: "Pending",
-    },
-    {
-      time: "08:00 PM",
-      name: "Harry",
-      service: "Hair Cut",
-      price: "400",
-      status: "Pending",
-    },
-    {
-      time: "08:00 PM",
-      name: "Harry",
-      service: "Hair Cut",
-      price: "400",
-      status: "Pending",
-    },
-    {
-      time: "08:00 PM",
-      name: "Harry",
-      service: "Hair Cut",
-      price: "400",
-      status: "Pending",
-    },
-  ];
+  Islogin();
+  let token =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHlsaXN0SWQiOiI2NGJkMjIwOGQ1ZjlmZGNjNWE2YzE4NWQiLCJpYXQiOjE2OTAxMjg0MTcsImV4cCI6MTY5MDczMzIxN30.uLw-gE_bbh2VrjSTrjEkZE6vz0MzGwjBv5q4G5ZjCk4";
+  const [apdta, setApdata] = useState([]);
+  useEffect(() => {
+    fetch(`${process.env.REACT_APP_BASE_URL}/app/stylist`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.appointments) {
+          setApdata(data.appointments);
+        }
+      });
+  }, []);
+
   return (
     <>
       <BusinessNavbar />
@@ -67,8 +59,7 @@ function BusinessApointments() {
               </form>
             </div>
           </div>
-
-          <AppointentsList cardData={cardData} />
+          {apdta.length > 1 && <AppointentsList cardData={apdta} />}
         </div>
       </div>
     </>

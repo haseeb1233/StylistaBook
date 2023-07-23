@@ -5,7 +5,7 @@ import logoImg1 from "../images/stylista.png";
 const BusinessNavbar = () => {
   return (
     <nav
-      style={{ margin: "0px", padding: "0px" }}
+      style={{ margin: "0px", padding: "0px", position: "static" }}
       className={`navbar navbar-expand-lg ${styles.navbarcss}`}
     >
       <div

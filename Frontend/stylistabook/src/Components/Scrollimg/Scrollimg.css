@@ -85,7 +85,7 @@
   
   .right {
     justify-content: flex-end;
-    position: absolute;
+    position: fixed;
     top: 70px;
     right: 80px;
   }
@@ -108,4 +108,91 @@
   .button-wrapper img{
     width: 60%;
   }
+
+  /* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .rowposters {
+    flex-wrap: nowrap;
+    overflow-x: scroll; 
+  }
+
+  .postersdiv {
+    flex: 0 0 40%;
+  }
+
+  .button-wrapper {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .round-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .round-button img {
+    width: 15px;
+    height: 15px;
+  }
+  .titleshop{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .postersdiv {
+    flex: 0 0 50%;
+    margin-top: -10px;
+    border-radius: 5%;
+  }
+ 
+  
+  .rating {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .noofreviews {
+    color: #fff;
+    font-size: 8px;
+    margin: 0;
+  }
+   
+}
+
+@media screen and (max-width: 480px) {
+  /* Mobile devices */
+  .rowposters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .postersdiv {
+    flex: 0 0 90%;
+  }
+
+  .button-wrapper {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .round-button {
+    width: 25px;
+    height: 25px;
+  }
+
+  .round-button img {
+    width: 12px;
+    height: 12px;
+  }
+  .titleshop{
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+
+
+
   

@@ -78,3 +78,47 @@
   #submitformbtn:hover {
     background-color: #2f2d2d;
   }
+
+
+
+  /* responsive */
+  /* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+  .Changepswd {
+    max-width: 90%;
+  }
+
+  .btnsdiv {
+    flex-wrap: wrap;
+  }
+
+  .btns {
+    margin: 5px;
+  }
+
+  .loginform input {
+    width: 90%;
+  }
+
+  #submitformbtn {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Changepswd {
+    max-width: 80%;
+  }
+
+  .btns {
+    margin-right: 50px;
+  }
+
+  .loginform input {
+    width: 90%;
+  }
+
+  #submitformbtn {
+    width: 90%;
+  }
+}

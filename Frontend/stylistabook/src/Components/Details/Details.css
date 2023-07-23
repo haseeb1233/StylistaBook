@@ -95,7 +95,7 @@
     font-weight: 400;
   }
   .bookbtn{
-    width: 70px;
+    width: 90px;
     height: 40px;
     text-align: center;
     background: #00a3ad;
@@ -104,8 +104,9 @@
     -webkit-tap-highlight-color: rgba(255,255,255,0);
     box-sizing: border-box;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 400;
     outline: 0;
+    font-size: 14px;
     text-align: center;
     transition: opacity .2s ease-out;
     border-radius: 7px;

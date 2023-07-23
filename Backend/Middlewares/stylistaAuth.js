@@ -2,6 +2,7 @@ const jwt = require("jsonwebtoken");
 
 const StylistModel = require("../Models/stylist");
 const { BlacklistModel } = require("../Models/Blacklist");
+const { UserInfo } = require("../Models/user.model");
 require("dotenv").config();
 const stylistAuth = async (req, res, next) => {
   try {
@@ -15,21 +16,29 @@ const stylistAuth = async (req, res, next) => {
     if (!decoded) {
       return res.status(400).json({ error: "Invalid Token" });
     }
-    const stylist = await StylistModel.findById(decoded.stylistId);
-    console.log(decoded);
+    let model = StylistModel;
+    if (req.path.includes("user")) {
+      console.log("path---------------------", req.path);
+      model = UserInfo;
+    }
+    const stylist = await model.findById(decoded.stylistId);
+
     if (!stylist) {
-      return res.status(401).json({ error: "Professinoal not found" });
+      return res.status(401).json({ error: "user not found" });
     }
 
     req.stylistID = stylist._id;
+    req.userID = stylist._id;
+
+    console.log("user id------>", req.stylistID);
 
     next();
   } catch (error) {
-    return res.status(400).json({ error: "Invalid Token" });
     console.log(
       "error from stylist auth--------------------------------------------------------- ",
       error
     );
+    return res.status(400).json({ error: "Invalid Token" });
   }
 };
 

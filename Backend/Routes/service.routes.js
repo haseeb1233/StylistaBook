@@ -7,7 +7,7 @@ const serviceRouter = express.Router();
 
 serviceRouter.get("/", async (req, res) => {
   try {
-    const { q } = req.query;
+    const q = req.query.q ? req.query.q : "a";
 
     const services = await ServiceModel.find({
       $or: [
@@ -15,7 +15,7 @@ serviceRouter.get("/", async (req, res) => {
         { description: { $regex: q, $options: "i" } },
         { category: { $regex: q, $options: "i" } },
       ],
-    }).populate("professional");
+    }).populate("stylistId", "_id name image salonName bio address");
 
     res.json(services);
   } catch (error) {
@@ -24,16 +24,11 @@ serviceRouter.get("/", async (req, res) => {
   }
 });
 
-// serviceRouter.use(professionalAuth);
-
 // ----------------add a new service---------------------
 
 serviceRouter.post("/add", stylistAuth, async (req, res) => {
   try {
-    console.log(
-      "-------------------------------------- here i am--------------------------"
-    );
-    const { name, description, duration, pricing } = req.body;
+    const { name, description, duration, image, pricing } = req.body;
     const stylistId = req.stylistID;
 
     const service = new ServiceModel({
@@ -42,6 +37,7 @@ serviceRouter.post("/add", stylistAuth, async (req, res) => {
       duration,
       pricing,
       stylistId,
+      image,
     });
 
     const savedService = await service.save();

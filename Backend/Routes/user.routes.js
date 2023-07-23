@@ -1,6 +1,6 @@
 const express = require("express");
 const userrouter = express.Router();
-const { UserInfo } = require("../Models/user.model");
+const { UserInfo } = require("../Models/user.model")
 
 const mongoose = require("mongoose");
 userrouter.use(express.json());
@@ -16,10 +16,10 @@ const { googleAuthentication } = require("../Controllers/user.controller");
 
 const JWT_SECRET = "mahendra";
 
-//********registration herte************* */
+//***registration herte**** */
 userrouter.post("/register", async (req, res) => {
   const { fname, lname, email, password } = req.body;
-  const userType = "customer";
+  const userType = "customer"
 
   const encryptedPassword = await bcrypt.hash(password, 10);
   try {
@@ -41,11 +41,11 @@ userrouter.post("/register", async (req, res) => {
   }
 });
 
-//***************log in here******** */
+//******log in here*** */
 
 userrouter.post("/login-user", async (req, res) => {
   const { email, password } = req.body;
-  console.log("--->", req.body);
+  console.log('--->', req.body);
 
   try {
     const user = await UserInfo.findOne({ email });
@@ -53,33 +53,25 @@ userrouter.post("/login-user", async (req, res) => {
       return res.json({ error: "User Not found" });
     }
     if (await bcrypt.compare(password, user.password)) {
-      const token = jwt.sign(
-        { email: user.email, stylistId: user._id },
-        JWT_SECRET,
-        {
-          expiresIn: "15m",
-        }
-      );
+      const token = jwt.sign({ email: user.email, stylistId: user._id }, JWT_SECRET, {
+        expiresIn: "15m",
+      });
 
       // if (res.status(201)) {
-      return res.json({
-        status: "ok",
-        data: token,
-        userID: user._id,
-        userDetails: user,
-      });
+      return res.json({ status: "ok", data: token, userID: user._id, userDetails: user });
       // } else {
       // return res.json({ error: "error" });
       // }
     } else {
       return res.json({ status: false, message: "Invalid Password" });
+
     }
   } catch (error) {
     res.json({ status: "error", message: error.message });
   }
 });
 
-//*****************reset password here*************** */
+//******reset password here****** */
 userrouter.post("/reset-password/:id/:token", async (req, res) => {
   const { id, token } = req.params;
   const { password } = req.body;
@@ -110,20 +102,12 @@ userrouter.post("/reset-password/:id/:token", async (req, res) => {
   }
 });
 
-// *************google auth******************//
+// ****google auth*******//
 
-userrouter.get(
-  "/auth/google",
-  passport.authenticate("google", { scope: ["profile", "email"] })
-);
 
-userrouter.get(
-  "/auth/google/callback",
-  passport.authenticate("google", {
-    failureRedirect: "/login",
-    session: false,
-  }),
-  googleAuthentication
-);
+userrouter.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+
+
+userrouter.get('/auth/google/callback', passport.authenticate('google', { failureRedirect: '/login', session:false }), googleAuthentication )
 
 module.exports = userrouter;

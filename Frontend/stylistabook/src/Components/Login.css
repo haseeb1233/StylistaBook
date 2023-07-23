@@ -83,16 +83,16 @@
 
 .parttwo{
     
-   width: 50%;
+   width: 60%;
 }
 
 #frgtpswd {
-    width: 126px;
+    width: 133px;
     margin: 14px 0px 0px 157px;
 }
 #frgtpswd p{
     border: solid #121111;
-       width: 150px;
+       width: 133px;
     border-radius: 0;
     border-width: 0 0 2px;
     color: #121111;
@@ -118,18 +118,19 @@
     padding: 20px 20px;
     color: #fff;
     font-size: 14px;
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     background-color: #121111;
     justify-content: space-around;
     cursor: pointer;
     border-radius: 4px;
-    margin:10px 0px 10px 110px;
+    margin:10px 0px 10px 100px;
 }
 
 .googleauth p{
-  margin-top: 15px;
+  margin-top: 2px;
+  
 }
 .googleauth img{
     width: 15%;

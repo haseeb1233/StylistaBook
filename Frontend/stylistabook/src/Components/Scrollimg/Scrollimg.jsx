@@ -15,11 +15,6 @@ function Scrollimg() {
 
   return (
     <div className="container">
-       <div className="button-wrapper left">
-        <button className="round-button" onClick={handleScrollLeft}>
-          <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="" />
-        </button>
-      </div>
       <div className="rowposters" ref={containerRef}>
 
       <div className='postersdiv'>
@@ -76,11 +71,6 @@ function Scrollimg() {
       <p className="titleshop">Glare Beauty</p>
       <p className="addressshop"> 3338 fairmount Ave, New era cuts, San Diego, 92105</p>
       </div>
-      </div>
-      <div className="button-wrapper right">
-        <button className="round-button" onClick={handleScrollRight}>
-          <img src="./images/rightarrow.png" alt="" />
-        </button>
       </div>
     </div>
   );

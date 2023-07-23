@@ -26,3 +26,33 @@
     font-size: 20px;
     padding-top: 20px;
 }
+
+
+/* responsive */
+
+/* Media query for size below 768px */
+@media (max-width: 768px) {
+    .categories {
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 50px; 
+      width: 90%; 
+    }
+  }
+  
+  /* Media query for mobile-sized screens*/
+  @media (max-width: 480px) {
+    .categories {
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 30px; 
+      width: 90%; 
+    }
+  
+    .catdiv img {
+      width: 50px; 
+      height: 50px;
+    }
+  
+    .catdiv h3 {
+      font-size: 16px;
+    }
+  }

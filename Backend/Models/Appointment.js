@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const appointmentSchema = new mongoose.Schema({
-  customerID: {
+  customerId: {
     type: String,
     ref: "user",
     required: true,
@@ -12,7 +12,7 @@ const appointmentSchema = new mongoose.Schema({
     required: true,
   },
 
-  service: {
+  serviceId: {
     type: String,
     ref: "Service",
     required: true,
@@ -21,7 +21,14 @@ const appointmentSchema = new mongoose.Schema({
   time: { type: String, required: true },
   status: {
     type: String,
-    enum: ["pending", "completed", "accepted", "cancelled", "expired"],
+    enum: [
+      "pending",
+      "completed",
+      "accepted",
+      "cancelled",
+      "rejected",
+      "expired",
+    ],
     default: "pending",
   },
   notes: { type: String },

@@ -28,7 +28,7 @@ function Client() {
      console.log(res)
       console.log(res.token)
     if(!res.token){
-
+      alert(res)
      nav("/login")
 
     }else{
@@ -51,7 +51,6 @@ function Client() {
         <input type="text"name='lname' placeholder='Last name' onChange={handleInput} />
         <input type="email" name='email' placeholder='Enter Email'onChange={handleInput} />
         <input type="password" name='password' placeholder='Password' onChange={handleInput}/>
-        <input type="text"  value="customer" onChange={handleInput}/>
         <input id='submitformbtn' type="submit" value="Create Account"  />
       </form>
     </div>

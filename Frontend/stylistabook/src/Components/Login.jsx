@@ -50,7 +50,8 @@ function Login() {
 
 let res = await response.json()
 console.log(res)
-console.log(res.message)
+console.log(res.token)
+localStorage.setItem("token",JSON.stringify(res.token))
 if(res){
 alert(res.message)
 

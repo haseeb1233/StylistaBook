@@ -14,6 +14,7 @@ import Stylist from "./Components/Signup/Stylist";
 import Login from "./Components/Login";
 import SaloonService from "./Components/Saloonservice/SaloonService"
 import Details from "./Components/Details/Details"
+import Client from "./Components/Signup/Client"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/saloon" element={<SaloonService/>} />
         <Route exact path="/details/:id" element={<Details/>} />
+        <Route exact path="/client" element={<Client/>} />
 
       </Routes>
     </BrowserRouter>

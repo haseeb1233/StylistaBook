@@ -17,11 +17,11 @@
   justify-content: center;
   padding-bottom: 4px;
   padding-top: 4px;
-  width: 80px;
+  width: 110px;
   color: rgb(18, 17, 17);
   text-align: center;
   text-transform: capitalize;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 20px;
   cursor: pointer;
   margin-top: 40px;
@@ -29,7 +29,7 @@
   margin-right: 20px;
 }
 .btnsdiv{
-margin-left: 130px;
+margin-left: 100px;
 }
 
 .stylistform{

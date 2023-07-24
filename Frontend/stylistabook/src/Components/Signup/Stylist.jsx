@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
 import "./Stylist.css"
-import { Navigate } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
 
 
 function Stylist() {
 const[stylistUser,setStylistUser]=useState({name:"",email:"",phone:"",password:"",image:"",salonName:"",address:"",bio:""})
-const nav =Navigate()
+const nav =useNavigate()
 const handleInput = (e) => {
   let {name,value}=e.target
   setStylistUser({
@@ -27,13 +27,15 @@ const handleStylistUser= async(e)=>{
     
      let res = await response.json()
      console.log(res)
-      console.log(res.token)
-    if(!res.token){
-
-     nav("/login")
+      console.log(res.message)
+    if(res){
+     alert(res.message)
+     if (res.message=="Stylist registered successfully. Please check your email for the OTP."){
+        nav("./login")
+     }
 
     }else{
-      alert("wrong")
+      alert(res.message)
     }
 
   } catch (error) {
@@ -57,7 +59,7 @@ console.log(stylistUser)
         <input type="number" placeholder='Mobile Number' name='phone' onChange={handleInput}/>
         <input type="text" placeholder='Enter image url' name="image" onChange={handleInput} />
         <input type="text" placeholder='Enter Salon Name' name='salonName' onChange={handleInput}/>
-        <input type="text" placeholder='Enter Adress' name="address" onChange={handleInput}/>
+        <input type="text" placeholder='Enter Address' name="address" onChange={handleInput}/>
         <input type="text" placeholder='Enter bio' name='bio' onChange={handleInput}/>
         <input id='submitformbtn' type="submit" value="Create Account"  />
       </form>

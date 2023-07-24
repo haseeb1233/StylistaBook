@@ -7,8 +7,10 @@ import Islogin from "../helper/Islogin";
 function Requests() {
   Islogin();
   let token =
+    localStorage.getItem("token") ||
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHlsaXN0SWQiOiI2NGJkMjIwOGQ1ZjlmZGNjNWE2YzE4NWQiLCJpYXQiOjE2OTAxMjg0MTcsImV4cCI6MTY5MDczMzIxN30.uLw-gE_bbh2VrjSTrjEkZE6vz0MzGwjBv5q4G5ZjCk4";
   const [apdta, setApdata] = useState([]);
+  const [flag, setflag] = useState(false);
   useEffect(() => {
     fetch(`${process.env.REACT_APP_BASE_URL}/app/requests/stylist`, {
       method: "GET",
@@ -24,7 +26,25 @@ function Requests() {
           setApdata(data.appointments);
         }
       });
-  }, []);
+  }, [flag]);
+
+  function handaleclick(status, id) {
+    fetch(`${process.env.REACT_APP_BASE_URL}/app/status/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
+      },
+      body: JSON.stringify({ status }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          console.log(data);
+          setflag(!flag);
+        }
+      });
+  }
 
   return (
     <>
@@ -60,7 +80,7 @@ function Requests() {
             </div>
           </div>
 
-          <RequestsList cardData={apdta} />
+          <RequestsList handaleclick={handaleclick} cardData={apdta} />
         </div>
       </div>
     </>

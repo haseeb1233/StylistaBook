@@ -1,5 +1,7 @@
+
 import React,{useState} from 'react'
 import "./Login.css"
+
 
 function Login() {
 
@@ -70,11 +72,17 @@ alert(res.message)
    console.log(selectuser,login)
 
   return (
-    <div className='login'>
-      <div className='btnsdiv'>
-        <button className='btns'>Sign Up</button>
-        <button style={{backgroundColor:"black",color:"white"}} className='btns'>Login</button>
+    <div className="login">
+      <div className="btnsdiv">
+        <button className="btns">Sign Up</button>
+        <button
+          style={{ backgroundColor: "black", color: "white" }}
+          className="btns"
+        >
+          Login
+        </button>
       </div>
+
       <form className='loginform' action="" onSubmit={handleLoginUser}>
         <input type="email" name='email' placeholder='Enter Email' onChange={handleInput} />
         <input type="password" name='password' placeholder='Password' onChange={handleInput}/>
@@ -84,19 +92,23 @@ alert(res.message)
           <option value="stylist">stylist</option>
         </select>
         <input id='submitformbtn' type="submit" value="Log In" />
+
       </form>
-      <div className='parttwo'>
-     <div id='frgtpswd'>
-     <p >Forgot password</p>
-     </div>
-      <p id='or'>or</p>
-      <button className='googleauth'>
-        <img src="https://ragsdalemartin.com/wp-content/uploads/2020/07/white-google-logo.png" alt="googlelogo" />
-        <p>Continue With Google </p>
-      </button>
+      <div className="parttwo">
+        <div id="frgtpswd">
+          <p>Forgot password</p>
+        </div>
+        <p id="or">or</p>
+        <button className="googleauth">
+          <img
+            src="https://ragsdalemartin.com/wp-content/uploads/2020/07/white-google-logo.png"
+            alt="googlelogo"
+          />
+          <p>Continue With Google </p>
+        </button>
       </div>
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;

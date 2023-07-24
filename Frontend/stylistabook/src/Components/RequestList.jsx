@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../css/TodayAp.module.css";
 import styles2 from "../css/Request.module.css";
 
-function RequestsList({ cardData }) {
+function RequestsList({ cardData, handaleclick }) {
   return (
     <div>
       {" "}
@@ -24,10 +24,26 @@ function RequestsList({ cardData }) {
             <div>{card.serviceId.pricing}</div>
             <div>{card.status}</div>
             <div>
-              <button className={styles2.acc_btn}>Accept</button>
+              <button
+                onClick={() => {
+                  handaleclick("accepted", card._id);
+                  alert("accepted");
+                }}
+                className={styles2.acc_btn}
+              >
+                Accept
+              </button>
             </div>
             <div>
-              <button className={styles2.rej_btn}>Reject</button>
+              <button
+                onClick={() => {
+                  handaleclick("rejected", card._id);
+                  alert("rejected");
+                }}
+                className={styles2.rej_btn}
+              >
+                Reject
+              </button>
             </div>
           </div>
         ))}

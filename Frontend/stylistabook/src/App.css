@@ -1,10 +1,18 @@
 .App {
   text-align: center;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+body div {
+  font-family: monospace;
 }
 
 @media (prefers-reduced-motion: no-preference) {

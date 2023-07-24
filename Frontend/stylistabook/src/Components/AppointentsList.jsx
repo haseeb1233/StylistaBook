@@ -16,9 +16,9 @@ function AppointentsList({ cardData }) {
         {cardData.map((card, index) => (
           <div key={index} className={styles.TDA_card}>
             <div>{card.time}</div>
-            <div>{card.name}</div>
-            <div>{card.service}</div>
-            <div>{card.price}</div>
+            <div>{card.customerId.fname}</div>
+            <div>{card.serviceId.name}</div>
+            <div>{card.serviceId.pricing}</div>
             <div>{card.status}</div>
           </div>
         ))}

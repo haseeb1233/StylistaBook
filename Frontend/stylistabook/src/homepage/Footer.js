@@ -1,6 +1,6 @@
-import"./Footer.css";
+import "./Footer.css";
 
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -107,8 +107,8 @@ const Footer = () => {
                 </div>
                 <div className="footer-text mb-25">
                   <p>
-                    Don’t miss to subscribe to our new feeds, kindly fill
-                    the form below.
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
                   </p>
                 </div>
                 <div className="subscribe-form">
@@ -151,7 +151,7 @@ const Footer = () => {
       </div>
       <div className="text-center">
         <p>
-          Copyright © 2018, All Right Reserved{' '}
+          Copyright © 2018, All Right Reserved{" "}
           <a href="https://.io/dipanshi92/">STYLISTA BOOK</a>
         </p>
       </div>

@@ -1,79 +1,84 @@
-.bookingdate{
-    z-index: 1;
-    width: 50%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    
+.bookingdate {
+  z-index: 1;
+  width: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.closebooking{
-    display: flex;
-    margin-left: 680px;
-    border: none;
-    color:black;
-    background-color: #fff;
+.closebooking {
+  display: flex;
+  margin-left: 500px;
+  border: none;
+  color: black;
+  background-color: #fff;
+  border: 1px solid black;
 }
-.subbooking h2{
-    font-size: 20px;
-    text-align: center;
+.subbooking h2 {
+  font-size: 20px;
+  text-align: center;
 }
-.selectdate{
-    width: 80%;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    
-    margin-top: 30PX;
-    margin-left: 15%;
+.selectdate {
+  width: 80%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 30px;
+  /* margin-left: 15%; */
+  margin: auto;
 }
-.selectdate label{
-    margin-right: 20px;
+.selectdate label {
+  margin-right: 20px;
 }
 
-.price{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 15%;
-    height: 60px;
+.price {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 15%;
+  height: 60px;
 }
-.price p{
-    font-size: 20px;
-    font-weight: 500;
+.price p {
+  font-size: 20px;
+  font-weight: 500;
 }
-.total{
-    display: flex;
-    justify-content: right;
-    font-size: 20px;
-    font-weight: 500;
+.total {
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
 }
-.totaldiv{
-    width: 80%;
-    margin-left: 15%;
-    margin-top: 20px;
-
+.totaldiv {
+  width: 80%;
+  /* margin-left: 15%; */
+  margin-top: 20px;
+  margin: auto;
 }
-.booknowbtn{
-    margin-top: 20px;
-    width: 500px;
-    height: 40px;
-    text-align: center;
-    background: #00a3ad;
-    border: 1px solid #00a3ad;
-    color: #fff;
-    -webkit-tap-highlight-color: rgba(255,255,255,0);
-    box-sizing: border-box;
-    cursor: pointer;
-    font-weight: 700;
-    outline: 0;
-    text-align: center;
-    transition: opacity .2s ease-out;
-    border-radius: 7px;
-    margin-left: 25px;
+.booknowbtn {
+  margin-top: 20px;
+  width: 500px;
+  height: 40px;
+  text-align: center;
+  background: #00a3ad;
+  border: 1px solid #00a3ad;
+  color: #fff;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 700;
+  outline: 0;
+  text-align: center;
+  transition: opacity 0.2s ease-out;
+  border-radius: 7px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

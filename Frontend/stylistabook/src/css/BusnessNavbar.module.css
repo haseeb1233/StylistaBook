@@ -8,3 +8,10 @@ nav.navbarcss {
   height: 70px;
   margin-left: 10px;
 }
+.usernamecss {
+  margin-right: 30px;
+}
+.logoutbtncss {
+  padding: 5px 10px;
+  margin-right: 20px;
+}

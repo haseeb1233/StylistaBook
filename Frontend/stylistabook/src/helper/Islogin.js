@@ -1,9 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Islogin = () => {
-  const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHlsaXN0SWQiOiI2NGJkMjIwOGQ1ZjlmZGNjNWE2YzE4NWQiLCJpYXQiOjE2OTAxMjg0MTcsImV4cCI6MTY5MDczMzIxN30.uLw-gE_bbh2VrjSTrjEkZE6vz0MzGwjBv5q4G5ZjCk4";
-
+  const token = localStorage.getItem("token") || null;
   const location = useLocation();
   const navigate = useNavigate();
   fetch(`${process.env.REACT_APP_BASE_URL}/stylistauth`, {

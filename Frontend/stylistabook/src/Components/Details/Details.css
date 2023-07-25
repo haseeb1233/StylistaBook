@@ -1,18 +1,17 @@
 .detailsposters {
-    width: 100%;
-    display: flex;
-    background-color: #fff;
-  }
- 
-  
-  .detailsdiv {
-    flex: 0 0 55%;
-    position: relative;
-    margin-left: 130px; 
-    border-radius: 5%;
-  }
-   
- 
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+}
+
+.detailsdiv {
+  flex: 0 0 55%;
+  position: relative;
+  margin-left: 130px;
+  border-radius: 5%;
+}
+
 .reviewdiv {
   background: rgba(0, 0, 0, 0.5);
   width: 70px;
@@ -40,159 +39,159 @@
   font-size: 10px;
   margin: 0;
 }
-  
-  .detailsdiv img {
+
+.detailsdiv img {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.titleshop {
+  font-size: 32px;
+  font-weight: 600;
+  color: #484848;
+}
+.addressshop {
+  font-size: 12px;
+  color: #767676;
+}
+
+.service {
+  font-size: 25px;
+  font-weight: 600;
+  color: #484848;
+}
+
+.bookmain {
+  display: flex;
+  border-top: 1px solid #c9c2c2;
+  height: 100px;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 12px;
+}
+.bookmainbottom {
+  border-bottom: 1px solid #c9c2c2;
+}
+.booksub {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 20px;
+}
+.booksub p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.servicetitle {
+  color: #383734;
+  line-height: 20px;
+  margin-bottom: 5px;
+  word-break: break-word;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.bookbtn {
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  background: #00a3ad;
+  border: 1px solid #00a3ad;
+  color: #fff;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 400;
+  outline: 0;
+  font-size: 14px;
+  text-align: center;
+  transition: opacity 0.2s ease-out;
+  border-radius: 7px;
+}
+
+.bookingdetails {
+  height: 700px;
+  width: 30%;
+  position: sticky;
+  top: 0px;
+  margin-left: 40px;
+  background-color: #fafafa;
+  border-radius: 6px;
+  padding: 30px 22px 1px;
+  color: #161718;
+  font-size: 100%;
+  line-height: normal;
+}
+.aboutusdiv h2 {
+  color: #383734;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.08px;
+  line-height: 16px;
+}
+.businesshours {
+  width: 100%;
+  margin-top: 20px;
+}
+.businesstitle {
+  color: #383734;
+  padding-top: 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.08px;
+  line-height: 16px;
+  height: 70px;
+  border-top: 1px solid #c9c2c2;
+  border-bottom: 1px solid #c9c2c2;
+}
+.call {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid #c9c2c2;
+  height: 70px;
+}
+.call button {
+  width: 70px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 40px;
+  font-weight: 500;
+}
+.date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* responsive */
+@media (max-width: 1030px) {
+  .detailsposters {
+    flex-direction: column;
+  }
+
+  .detailsdiv {
+    flex: 1;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .bookingdetails {
     width: 100%;
-    border-radius: 2%;
+    margin-left: 0;
+    margin-top: 30px;
   }
-
-  .titleshop{
-    font-size: 32px;
-    font-weight: 600;
-    color: #484848;
-  }
-  .addressshop{
-    font-size: 12px;
-    color: #767676;
-  }
-
-  .service{
-    font-size: 25px;
-    font-weight: 600;
-    color: #484848;
-  }
-
-  .bookmain{
-    display: flex;
-    border-top: 1px solid #c9c2c2;
-    height: 100px;
-    justify-content: space-between;
-    width: 90%;
-    padding-top: 12px;
-  }
-  .bookmainbottom{
-    border-bottom: 1px solid #c9c2c2;
-  }
-  .booksub{
-    display: flex;
-    width: 130px;
-    justify-content: space-between;
-    height: 50px;
-    margin-top: 20px;
-  }
-  .booksub p{
-    margin-top: 8px;
-    font-weight: bold;
-  }
-
-  .servicetitle{
-    color: #383734;
-    line-height: 20px;
-    margin-bottom: 5px;
-    word-break: break-word;
-     margin-top: 20px;
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .bookbtn{
-    width: 90px;
-    height: 40px;
-    text-align: center;
-    background: #00a3ad;
-    border: 1px solid #00a3ad;
-    color: #fff;
-    -webkit-tap-highlight-color: rgba(255,255,255,0);
-    box-sizing: border-box;
-    cursor: pointer;
-    font-weight: 400;
-    outline: 0;
-    font-size: 14px;
-    text-align: center;
-    transition: opacity .2s ease-out;
-    border-radius: 7px;
-  }
-
-    .bookingdetails{
-     height: 700px;
-      width: 30%;
-      position: sticky;
-      top: 0px;
-      margin-left: 40px;
-      background-color: #fafafa;
-      border-radius: 6px;
-      padding: 30px 22px 1px;
-      color: #161718;
-    font-size: 100%;
-    line-height: normal;
-    }
-    .aboutusdiv h2{
-        color: #383734;
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      font-size: 20px;
-      font-weight: 500;
-    letter-spacing: .08px;
-    line-height: 16px;
-    }
-    .businesshours{
-        width: 100%;
-        margin-top: 20px;
-    }
-    .businesstitle{
-        color: #383734;
-        padding-top: 30px;
-      text-transform: uppercase;
-      font-size: 20px;
-      font-weight: 500;
-    letter-spacing: .08px;
-    line-height: 16px;
-    height: 70px;
-    border-top: 1px solid #c9c2c2 ;
-    border-bottom: 1px solid #c9c2c2;
-    }
-   .call{
-    display:flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    border-bottom: 1px solid #c9c2c2;
-    height: 70px;
-   }
-   .call button{
-    width: 70px;
-    background: #fff;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    color: #000;
-    text-align: center;
-    margin-bottom: 10px;
-    height: 40px;
-    font-weight: 500;
-   }
-  .date{
-    display:flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-
-  /* responsive */
-  @media (max-width: 1030px) {
-    .detailsposters {
-      flex-direction: column;
-    }
-  
-    .detailsdiv {
-      flex: 1;
-      margin-left: 0;
-      margin-bottom: 30px;
-    }
-  
-    .bookingdetails {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 30px;
-    }
-  }
-  /* Media query for tablet-sized screens (768px and below) */
+}
+/* Media query for tablet-sized screens (768px and below) */
 @media (max-width: 768px) {
   .detailsposters {
     flex-direction: column;

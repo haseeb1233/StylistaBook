@@ -26,25 +26,25 @@ Main Page : Here user will get all the services and he can choose services
 
 ![Screenshot (1473)](https://github.com/harpreet-1/decisive-duck-1364/assets/119473352/c3fd41e2-508f-47c0-90ab-262226fbbbeb)
 
-Dashboard Page for stylist 
+Dashboard Page for a stylist 
 ![Screenshot (1474)](https://github.com/harpreet-1/decisive-duck-1364/assets/119473352/1fda4902-477a-4bac-bd39-b055fbb9d9d7)
 ![Screenshot (1475)](https://github.com/harpreet-1/decisive-duck-1364/assets/119473352/f15ba2e6-25d9-42b5-8ced-51212791dcde)
 
 About this project: 🙌
-This is Collaborative Project of 4 members and we completed this project in 5 days of span.
+This is a Collaborative Project of 4 members and we completed this project in 5 days of span.
 
-All the Data for Api's is directly coming from Database
+All the Data for APIs is directly coming from Database
 Deployment
-For Deployment we used Netlify and Cyclic .Frontend deployed on Netlify and Backend deployed on Cyclic .
+For Deployment, we used Netlify and Cyclic. Frontend deployed on Netlify and Backend deployed on Cyclic.
 
 Frontend deployed - https://dulcet-pie-55ce58.netlify.app/
 Backend deployed - [https://pear-splendid-bee.cyclic.app/](https://stylistabookbackend-production.up.railway.app/)
 Our Team Members ❤️
-Harpreet Singh : Team Lead
-Abdul 
-Dipanshi  
-Mahendera
-dilip kumar
+Harpreet Singh: Team Lead,
+Abdul,
+Mahendra,
+Dipanshi, 
+Dilip Kumar
 
 ## Technology we used....🔧 - React JavaScript - Node JS - Express JS - MongoDB -
 

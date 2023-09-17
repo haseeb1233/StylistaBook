@@ -1,10 +1,6 @@
 # StylistaBook
 
 
-# temporary-rice-9
-![logostylista 323230cf827601a26ca3](https://github.com/harpreet-1/decisive-duck-1364/assets/119473352/a4707cb8-1945-47d9-96b3-b8e102a1feec)
-
-
 # Stylista book 👋
 Stylistabook allows businesses to have clients book appointments with a “Book Now” button. It also gives customers the ability to reschedule, cancel, and rebook appointments online so they don't need to make a call.26
 
